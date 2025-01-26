@@ -23,7 +23,10 @@ public class GameListService {
 
     @Transactional(readOnly = true)
     public GameListDTO findById(Long id) {
+        // findById returns an optional, "get()" to get what's inside
         return new GameListDTO(gameListRepository.findById(id).get());
     }
+
+
 
 }
