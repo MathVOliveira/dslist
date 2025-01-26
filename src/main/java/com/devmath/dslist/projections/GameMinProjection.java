@@ -6,7 +6,7 @@ public interface GameMinProjection {
     // "get()" methods corresponding to the query return fields
     Long getId();
     String getTitle();
-    Integer getYear();
+    Integer getGameYear();
     String getImgUrl();
     String getShortDescription();
     Integer getPosition();
